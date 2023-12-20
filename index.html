@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Titeln på tabbe samt bootstrap intergrering och koppling till css. Samt charset och viewport för mobil-->
+<head>
+    <title>SteroidShoppen.nu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset = "UTF-8">
+    <!-- Javascript intergrering-->
+    <script src="script.js"></script>
+</head>
+
+<body class="container">
+    <!-- Rubriken med en länk-->
+    <div class="header">
+        <h1>Steroid shoppen - Hitta allt du beh&ouml;ver h&auml;r</h1>
+        <h2>L&auml;s mer om steroider och dess sidoeffekter h&auml;r <a
+                href="https://en.wikipedia.org/wiki/Steroid">Wikipedia</a>
+        </h2>
+    </div>
+    
+<!-- Listorna höger och vänster med köp knappar som fungerar men leder till blank hemsida.-->
+    <div class="lists">
+        <div class="row">
+            <div class="col-md-4 right-h3">
+                <h3> Orala Steroider</h3>
+                <ul>
+                    <li> RAD - 140</li>
+                    <li> Dianabol</li>
+                    <li> Anavar</li>
+                    <li> Winstrol</li>
+                </ul>
+                <button type="button" class="btn btn-success">
+                    <a href="purchaseO.html" target="_blank" class="text-white">K&ouml;p</a>
+                </button>
+            </div>
+            
+<!-- Bilderna som sitter imellan listorna -->
+            <div class="col-md-4 image-container">
+                <img src="TrenboloneAcetate.png" alt="TrenboloneAcetate" class="img-fluid" id="slideshowImg1">
+                <img src="MK-677.png" alt="MK-677" class="img-fluid" id="slideshowImg2" style="display: none; width: 70%; height: 70%;">
+            </div>
+    
+
+            <div class="col-md-4 left-h3">
+                <h3> Injecerbara steroider</h3>
+                <ul>
+                    <li>TrenboloneAC</li>
+                    <li>Testosterone+</li>
+                    <li>Alphabolin</li>
+                    <li>Equipoise</li>
+                </ul>
+                <button type="button" class="btn btn-success">
+                    <a href="purchaseI.html" target="_blank" class="text-white">K&ouml;p</a>
+                </button>
+            </div>
+            <!--knapparna nere i vänster -->
+            <div class="light-switch">
+                <button onclick="toggleTheme()">Change Theme</button>
+                <button onclick="epilepsi()"> Epilepsi </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

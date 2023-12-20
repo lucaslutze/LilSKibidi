@@ -1,0 +1,133 @@
+/* Bakgrundsfärg för hela sidan */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Avståndet mellan rubriker och listor*/
+h3,
+li {
+    margin-bottom: 1%;
+}
+
+/* Stil för knappar */
+button {
+    background-color: #4CAF50; /* Grön färg */
+    color: white; /* Vit text */
+    padding: 2,5% 5%; /* Mellanrum i knappen från texten och kanten  */
+    border: none; /* Ingen ram */
+    border-radius: 5px; /* Lite rundade hörn */
+    cursor: pointer;
+    text-decoration: none; /* Ingen understrykning för länkar */
+    display: inline-block;
+}
+
+/* Effekt när man hoverar över knappen */
+button:hover {
+    background-color: #45a049; /* Lite mörkare grön blir coolt */
+}
+
+/* Tar bort länk grejen från knappen */
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Stil för h1 men gör typ inget då header har margin redan */
+h1 {
+    margin-top: 1%; 
+}
+
+/* Stil för Wikipedia raden  */
+h2 {
+    font-size: 150%; /* Storlek på rubrik 2 i procent */
+    text-align: center; /* Centrerad text */
+    margin-bottom: 5%; /* Avstånd under rubrik 2 */
+}
+
+/* Stil för listornas rubrik */
+h3 {
+    margin-bottom: 1%; 
+}
+
+/* Centered klassens egenskaper' */
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+/* Margin för högra listan för den har längre namn */
+.right-h3 {
+    margin-left: 5.5%;
+}
+
+/* Vänstra listans position */
+.left-h3 {
+    margin: 0 auto;
+    max-width: 50%; 
+}
+
+
+/* Responsiv bild */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Stil för header */
+.header {
+    text-align: center;
+    margin-top: 3%; /* Avstånd till toppen */
+}
+
+/* Margins för listor */
+.lists {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Bildernas egenskaper */
+.img-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 30%; 
+    max-height: 30%; 
+}
+
+/* Hur bred listorna är  */
+.col-md-4 {
+    width: 30%;
+}
+
+/* Dark mode färger */
+body.dark-theme {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+/* Färg för wiki på dark mode */
+.dark-theme a {
+    color: #bb86fc;
+}
+
+/* Knapp för o byta tema */
+.light-switch {
+    position: fixed;
+    bottom: 2%;
+    left: 1%;
+}
+
+/* Media för mobil */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Mindre textstorlek på mindre skärmar */
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
